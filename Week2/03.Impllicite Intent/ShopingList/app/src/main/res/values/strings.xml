@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Shoping List</string>
+    <string name="button_cheese">CHEESE</string>
+    <string name="button_carrot">CARROT</string>
+    <string name="button_chilly">CHILLY</string>
+    <string name="button_wings">WINGS</string>
+    <string name="button_diper">DIPER</string>
+    <string name="button_milk">MILK</string>
+    <string name="button_butter">BUTTER</string>
+    <string name="button_wine">WINE</string>
+    <string name="button_vodka">VODKA</string>
+    <string name="button_sneeker">SNEEKER</string>
+    <string name="button_kitkat">KITKAT</string>
+    <string name="button_add_item">ADD ITEM</string>
+    <string name="location_hint">Enter Location Here</string>
+    <string name="button_search_location">Search Location</string>
+</resources>
