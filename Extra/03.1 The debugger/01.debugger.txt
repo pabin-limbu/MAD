@@ -1,0 +1,29 @@
+--Run debug app
+--debug tab will be at bottom of the android studio.
+
+
+SETTING A BREAKPOINT
+--Place in a code where we can pause the normal execution of app and perform other action such as:
+->Examine variable
+->evaluate Expression
+->Execute code line by line to determine the cause of runtime error.
+
+--Break point can be set at any executable code of line.
+-- set the break point where evere you want to start debuging
+
+
+FRAMES TAB
+--shows the current execution stack frames for given thread.(which method are executing in a stack)
+
+WATCHER
+--shows value of any variable watches which has been set.
+-- it allows to keep track of specefic variable in program and see how value changes when program runs
+
+VARIABLE PANE
+--Shows variable in current scope and its value.
+
+
+DEBUGGER can also be used with running app selecting attach debugger from menu.
+
+_____
+-- AFTER a breakoint, debugger can be used to execute each line of code one at a time.

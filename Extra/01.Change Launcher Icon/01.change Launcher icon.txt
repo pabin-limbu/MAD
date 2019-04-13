@@ -1,0 +1,5 @@
+-- Right click on resources and create new image asset.
+	--select launcher icon on icon type.
+	--click forground layer, select clip art for asset type.
+	--select clip art to fiew icons.
+	--	

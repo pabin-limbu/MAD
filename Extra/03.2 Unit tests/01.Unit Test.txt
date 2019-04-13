@@ -1,0 +1,31 @@
+-- The @RunWith(JUnit4.class) annotation indicates the runner that will be used to run the tests in this class. 
+-- A test runner is a library or set of tools that enables testing to occur and the results to be printed to a log. 
+-- The @SmallTest annotation indicates that all the tests in this class are unit tests that have no dependencies,
+   and run in milliseconds.
+-- The @SmallTest, @MediumTest, and @LargeTest annotations are conventions that make it easier to bundle groups 
+   of tests into suites of similar functionality.
+-- The setUp() method is used to set up the environment before testing, and includes the @Before annotation. 
+
+NOTE
+-- you can only test a method that are public or package protected.
+
+ASSERT
+--Assertions are expressions that must evaluate and result in TRUE for the test to pass.
+-- The assertThat() method is used with matchers. Matchers are the chained method calls 
+   in the second operand of this assertion.
+
+CLOSETO
+-- With the closeTo() matcher, rather that testing for exact equality you can test for equality within a specific delta.
+-- Delta specefy the closeness , close to take its result true if precision lies within the specified delta.
+EXAMPLE
+	@Test
+public void givenADouble_whenCloseTo_thenCorrect() {
+    double actual = 1.3;
+    double operand = 1;--operand bhaneko aagadi ko value.
+    double error = 0.5;-- delta bhaneko pachadi ko value.
+--the actuall value must fall in between operand and delta
+  
+    assertThat(actual, closeTo(operand, error));
+}
+As 1.3 is between 0.5 and 1.5, the test will pass. Same way, we can test the negative scenario:
+
