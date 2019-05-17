@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hello Comcat</string>
+    <string name="button_change_color">Chage Color</string>
+    <string name="Hello_world_textView">Hello World!</string>
+</resources>

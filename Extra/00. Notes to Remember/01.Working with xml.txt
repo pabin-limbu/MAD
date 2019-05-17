@@ -1,0 +1,33 @@
+FETCH XML VALUE-NAME
+syntax:
+getResources().getResourceEntryName(R.color.blue);
+Explanation: 
+--we provide resource id to get resource entry name.
+------------------------------------------------------
+
+FETCH xml VALUE-ID
+stntax:
+getResources().getIdentifier(Name of the color,Resource name eg string.xml or color.xml,package name);
+Explanation:
+-- in this case color name is in variable colorName and resource file is "color",package name is extracted using current
+   application context.getPackageName which fetch the package name of current application. 
+
+Syntax Example:
+int myColorID=getResources().getIdentifier(colorName,"color",this.getApplicationContext().getPackageName());
+-------------------------------------------------------
+
+FETCH ENTIRE FIELD NAME FROM xml FILE
+syntax:
+ Field[] fields = R.string.class.getFields();
+        String[] allNames = new String[fields.length];
+        for (int  i =0; i < fields.length; i++) {
+            allNames[i] = fields[i].getName();
+              }
+Explanation:
+-- all field from string resource file is fetched in field array.
+-- a string array is created to hold the value which we are going to extract.
+-- loop each field, getName from each field and save to string array.
+
+
+
+

@@ -1,0 +1,18 @@
+Androi Support library is the collection of libraries.
+INCLUDES:
+--Backward-compatible versions of framework components, so that apps running on older versions of the Android platform 
+  can support features made available in newer versions of the platform
+--Additional layout and user interface elements
+--Support for different device form factors, such as TV devices or wearables
+--Components to support Material Design elements
+--Other features, including palette support, annotations, percentage-based layout dimensions, and preferences
+
+COMPILED SDK VERSION.
+--The compile version is the Android framework version your app is compiled with in Android Studio.
+
+MINSDK VERSION:
+--The minimum version is the oldest Android API version your app runs under.
+
+TARGETSDK version:
+--The target version indicates the API version your app is designed and tested for.
+

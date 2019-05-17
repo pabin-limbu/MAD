@@ -1,0 +1,5 @@
+APP BAR
+-- AppBarLayout is like a vertical LinearLayout.
+-- It uses the Toolbar class in the support library, instead of the native ActionBar.
+-- The app bar is a section at the top of the display that can display the activity 
+   title, navigation, and other interactive items.
