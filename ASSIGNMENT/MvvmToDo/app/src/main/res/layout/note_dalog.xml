@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/noteColor"
+    >
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginEight"
+        android:layout_marginLeft="@dimen/marginEight"
+        android:layout_marginTop="@dimen/marginSixteen"
+        android:text="TextView"
+        android:textColor="@color/blackColor"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:textColor="@color/blackColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/marginEight"
+        android:layout_marginRight="@dimen/marginEight"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:textColor="@color/blackColor"
+        android:layout_width="0dp"
+        android:layout_height="378dp"
+        android:layout_marginStart="@dimen/marginSixteen"
+        android:layout_marginLeft="@dimen/marginSixteen"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginEight"
+        android:layout_marginLeft="@dimen/marginEight"
+        android:layout_marginTop="@dimen/marginSixteen"
+        android:layout_marginEnd="@dimen/marginEight"
+        android:layout_marginRight="@dimen/marginEight"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toEndOf="@+id/txtTitle"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+    <TextView
+        android:id="@+id/txtPriority"
+        android:textColor="@color/blackColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginEight"
+        android:layout_marginLeft="@dimen/marginEight"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/marginEight"
+        android:layout_marginRight="@dimen/marginEight"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
+</android.support.constraint.ConstraintLayout>

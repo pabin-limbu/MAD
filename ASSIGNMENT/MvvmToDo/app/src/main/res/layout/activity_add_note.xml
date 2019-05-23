@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEditNoteActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    >
+
+
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginEight"
+        android:layout_marginLeft="@dimen/marginEight"
+
+        android:layout_marginTop="@dimen/marginSixteen"
+        android:hint="@string/title"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginEight"
+        android:layout_marginLeft="@dimen/marginEight"
+
+        android:layout_marginTop="@dimen/marginSixteen"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_title" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="72dp"
+
+        android:layout_height="27dp"
+        android:layout_marginStart="@dimen/marginEight"
+        android:layout_marginLeft="@dimen/marginEight"
+        android:layout_marginTop="@dimen/marginSixteen"
+        android:text="@string/priority"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTime" />
+
+    <NumberPicker
+        android:id="@+id/number_picker_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginEight"
+        android:layout_marginLeft="@dimen/marginEight"
+        android:layout_marginTop="@dimen/marginSixteen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+    </NumberPicker>
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="205dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="@dimen/marginEight"
+        android:layout_marginLeft="@dimen/marginEight"
+        android:layout_marginTop="@dimen/marginSixteen"
+        android:text="MM/DD/YYYY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_description" />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="205dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="@dimen/marginEight"
+        android:layout_marginLeft="@dimen/marginTwentyEight"
+        android:layout_marginTop="@dimen/marginSixteen"
+        android:text="HH:MM"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+    <ImageButton
+        android:id="@+id/btnDate"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginTwentyEight"
+        android:layout_marginLeft="@dimen/marginEight"
+        android:layout_marginTop="@dimen/marginSixteen"
+        android:onClick="showDatePicker"
+
+
+        android:src="@drawable/ic_date"
+        app:layout_constraintStart_toEndOf="@+id/txtDate"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_description" />
+
+    <ImageButton
+        android:id="@+id/btnTime"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginTwentyEight"
+        android:layout_marginLeft="@dimen/marginTwentyEight"
+        android:layout_marginTop="@dimen/marginEight"
+        android:onClick="showTimePicker"
+        android:src="@drawable/ic_access_time"
+        app:layout_constraintStart_toEndOf="@+id/txtTime"
+        app:layout_constraintTop_toBottomOf="@+id/btnDate" />
+
+
+</android.support.constraint.ConstraintLayout>
